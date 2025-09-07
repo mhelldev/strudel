@@ -1,0 +1,19 @@
+const bank = "tr909"
+
+// radnomnes
+$:s("hh(4,8)").gain(1.0).bank(bank).sometimesBy(.1, x => x.ply("2"))
+
+//1-0 pattern
+//$:s("bd").struct("1 [1 1] 0 0 0 1 0 0").bank(bank)
+
+//gemoetry:
+$:s("bd(<3 5>,16)").bank(bank)
+s("cp(5,16)").bank(bank)
+
+// exact indexes
+$:s("sd").beat("8,16",16).bank(bank)
+
+$:s("cp(3,16)").bank(bank)
+
+
+
